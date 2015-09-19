@@ -50,7 +50,17 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="Config\ConfigTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Jabu.Foursquare.SearchPlaces.Client\Jabu.Foursquare.SearchPlaces.Client.csproj">
+      <Project>{e3cf64d7-82a0-4b47-aa6a-6f7dcf83e8f9}</Project>
+      <Name>Jabu.Foursquare.SearchPlaces.Client</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
