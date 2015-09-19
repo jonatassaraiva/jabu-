@@ -9,13 +9,17 @@ namespace Jabu.Foursquare.SearchPlaces.Client.Tests.Config
         [TestMethod]
         public void Tests_Section()
         {
-            var jSaraivaFoursquareSearchPlaces = ManagerSectionConfig.JSaraivaFoursquareSearchPlaces;
+            var jabuFoursquareSearchPlaces = ManagerSectionConfig.JSaraivaFoursquareSearchPlaces;
 
-            Assert.IsNotNull(jSaraivaFoursquareSearchPlaces);
-            Assert.AreEqual("Search Places Client", jSaraivaFoursquareSearchPlaces.Application);
-            Assert.AreEqual("QEFLOOGZEJTMXPDYP3SK1XCP00HCVCAOYXVABHFE1YW1M5XL", jSaraivaFoursquareSearchPlaces.ClientId);
-            Assert.AreEqual("BSEVYTYOIP5UMAOZLCKR4W2XNJUWORYBDALW2HZIJUWCAUR0", jSaraivaFoursquareSearchPlaces.ClientSecret);
-            Assert.AreEqual("20150901", jSaraivaFoursquareSearchPlaces.Version);
+            Assert.IsNotNull(jabuFoursquareSearchPlaces);
+            Assert.AreEqual("Search Places Client", jabuFoursquareSearchPlaces.Application);
+            Assert.AreEqual("QEFLOOGZEJTMXPDYP3SK1XCP00HCVCAOYXVABHFE1YW1M5XL", jabuFoursquareSearchPlaces.ClientId);
+            Assert.AreEqual("BSEVYTYOIP5UMAOZLCKR4W2XNJUWORYBDALW2HZIJUWCAUR0", jabuFoursquareSearchPlaces.ClientSecret);
+            Assert.AreEqual("20150901", jabuFoursquareSearchPlaces.Version);
+
+            var searchVenuesServiceConfig = jabuFoursquareSearchPlaces.SearchVenuesService;
+            Assert.IsNotNull(searchVenuesServiceConfig);
+            Assert.AreEqual("https://api.foursquare.com/v2/venues/search?client_id={0}&client_secret={1}&v={2}", searchVenuesServiceConfig.URL);
         }
     }
 }

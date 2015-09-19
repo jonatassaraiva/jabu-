@@ -47,5 +47,16 @@ namespace Jabu.Foursquare.SearchPlaces.Client.Config
 
             set { base["clientVersion"] = value; }
         }
+
+        /// <summary>
+        /// A clientVersion parameter, which is a date that essentially represents the "version" of the API that client expect from Foursquare.
+        /// </summary>
+        [ConfigurationProperty("searchVenuesService", IsRequired = false)]
+        public ServiceConfig SearchVenuesService
+        {
+            get { return (ServiceConfig)base["searchVenuesService"]; }
+
+            set { base["clientVersion"] = value; }
+        }
     }
 }
