@@ -1,0 +1,48 @@
+-
+  os: Visual Studio 2015
+  platform: Any CPU
+  skip_tags: true
+  build:
+    project: src/Jabu.Foursquare.SearchPlaces.Client.sln
+    verbosity: minimal
+
+-
+  branches:
+    only:
+      - master
+  before_build:
+    - nuget restore src/Jabu.Foursquare.SearchPlaces.Client.sln
+  configuration: Release
+  version: 1.0.0.{build}
+  assembly_info:
+    patch: true
+    file: '**\AssemblyInfo.*'
+    assembly_version: '{version}'
+    assembly_file_version: '{version}'
+    assembly_informational_version: '{version}'
+  build:
+      project: src/TestAppveyor.sln
+      publish_nuget: true
+      include_nuget_references: true
+      verbosity: minimal
+  artifacts:
+    path: src\Jabu.Foursquare.SearchPlaces.Client\bin\$(configuration)
+    name: Package DLL
+
+-
+  branches:
+    only:
+      - /dev-.*/
+  before_build:
+    - nuget restore src/TestAppveyor.sln
+  configuration: Debug
+  version: 1.0.0.{build}
+  assembly_info:
+    patch: true
+    file: '**\AssemblyInfo.*'
+    assembly_version: '{version}'
+    assembly_file_version: '{version}'
+    assembly_informational_version: '{version}'
+  artifacts:
+    path: src\Jabu.Foursquare.SearchPlaces.Client\bin\$(configuration)
+    name: Package DLL
