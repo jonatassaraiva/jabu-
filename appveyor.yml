@@ -20,11 +20,6 @@
     assembly_version: '{version}'
     assembly_file_version: '{version}'
     assembly_informational_version: '{version}'
-  build:
-      project: src/TestAppveyor.sln
-      publish_nuget: true
-      include_nuget_references: true
-      verbosity: minimal
   artifacts:
     path: src\Jabu.Foursquare.SearchPlaces.Client\bin\$(configuration)
     name: Package DLL
