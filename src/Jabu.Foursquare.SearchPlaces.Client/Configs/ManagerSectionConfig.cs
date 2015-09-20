@@ -1,12 +1,11 @@
 ﻿using System;
 using System.Configuration;
 
-namespace Jabu.Foursquare.SearchPlaces.Client.Config
+namespace Jabu.Foursquare.SearchPlaces.Client.Configs
 {
-    public class ManagerSectionConfig
+    public static class ManagerSectionConfig
     {
-        private const string SECTION_NAME = "jabuFoursquareSearchPlaces";
-
+        private const string SECTION_NAME = "jabuFoursquareSearchPlaces"; 
         public static SectionConfig JSaraivaFoursquareSearchPlaces
         {
             get

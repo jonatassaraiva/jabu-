@@ -1,0 +1,145 @@
+{
+    "meta": {
+        "code": 200,
+        "requestId": "55fdc213498ed9eaaf3d0e33"
+    },
+    "response": {
+        "venues": [
+            {
+                "id": "430d0a00f964a5203e271fe3",
+                "name": "Brooklyn Bridge Park",
+                "contact": {
+                    "phone": "2128033822",
+                    "formattedPhone": "(212) 803-3822",
+                    "twitter": "nycparks",
+                    "facebook": "104475634308",
+                    "facebookUsername": "BartowPell",
+                    "facebookName": "Bartow-Pell Mansion Museum"
+                },
+                "location": {
+                    "address": "Main St",
+                    "crossStreet": "Plymouth St",
+                    "lat": 40.70227697066692,
+                    "lng": -73.9965033531189,
+                    "distance": 389,
+                    "postalCode": "11201",
+                    "cc": "US",
+                    "city": "Brooklyn",
+                    "state": "NY",
+                    "country": "Estados Unidos",
+                    "formattedAddress": [
+                        "Main St (Plymouth St)",
+                        "Brooklyn, NY 11201",
+                        "Estados Unidos"
+                    ]
+                },
+                "categories": [
+                    {
+                        "id": "4bf58dd8d48988d163941735",
+                        "name": "Parque",
+                        "pluralName": "Parques",
+                        "shortName": "Parque",
+                        "icon": {
+                            "prefix": "https://ss3.4sqi.net/img/categories_v2/parks_outdoors/park_",
+                            "suffix": ".png"
+                        },
+                        "primary": true
+                    },
+                    {
+                        "id": "5109983191d435c0d71c2bb1",
+                        "name": "Brinquedo / Atração de Parque Temático",
+                        "pluralName": "Brinquedos / Atrações de Parques Temáticos",
+                        "shortName": "Parque Temático",
+                        "icon": {
+                            "prefix": "https://ss3.4sqi.net/img/categories_v2/arts_entertainment/themepark_",
+                            "suffix": ".png"
+                        },
+                        "primary": false
+                    }
+                ],
+                "verified": true,
+                "stats": {
+                    "checkinsCount": 37015,
+                    "usersCount": 22568,
+                    "tipCount": 224
+                },
+                "url": "http://nyc.gov/parks",
+                "specials": {
+                    "count": 0,
+                    "items": [ ]
+                },
+                "hereNow": {
+                    "count": 18,
+                    "summary": "18 pessoas estão aqui",
+                    "groups": [
+                        {
+                            "type": "others",
+                            "name": "Outras pessoas aqui",
+                            "count": 18,
+                            "items": [ ]
+                        }
+                    ]
+                },
+                "referralId": "v-1442693651"
+            },
+            {
+                "id": "51eabef6498e10cf3aea7942",
+                "name": "Brooklyn Bridge Park - Pier 2",
+                "contact": { },
+                "location": {
+                    "address": "Furman St",
+                    "crossStreet": "Brooklyn Bridge Park Greenway",
+                    "lat": 40.699511638395514,
+                    "lng": -73.99813359642076,
+                    "distance": 166,
+                    "cc": "US",
+                    "city": "Brooklyn",
+                    "state": "NY",
+                    "country": "Estados Unidos",
+                    "formattedAddress": [
+                        "Furman St (Brooklyn Bridge Park Greenway)",
+                        "Brooklyn, NY",
+                        "Estados Unidos"
+                    ]
+                },
+                "categories": [
+                    {
+                        "id": "4bf58dd8d48988d163941735",
+                        "name": "Parque",
+                        "pluralName": "Parques",
+                        "shortName": "Parque",
+                        "icon": {
+                            "prefix": "https://ss3.4sqi.net/img/categories_v2/parks_outdoors/park_",
+                            "suffix": ".png"
+                        },
+                        "primary": true
+                    }
+                ],
+                "verified": false,
+                "stats": {
+                    "checkinsCount": 2303,
+                    "usersCount": 1734,
+                    "tipCount": 16
+                },
+                "specials": {
+                    "count": 0,
+                    "items": [ ]
+                },
+                "hereNow": {
+                    "count": 1,
+                    "summary": "Uma outra pessoa está aqui",
+                    "groups": [
+                        {
+                            "type": "others",
+                            "name": "Outras pessoas aqui",
+                            "count": 1,
+                            "items": [ ]
+                        }
+                    ]
+                },
+                "referralId": "v-1442693651"
+            }
+        ],
+        "confident": true
+    }
+}

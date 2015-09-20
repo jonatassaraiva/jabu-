@@ -1,6 +1,6 @@
 ﻿using System.Configuration;
 
-namespace Jabu.Foursquare.SearchPlaces.Client.Config
+namespace Jabu.Foursquare.SearchPlaces.Client.Configs
 {
     public class ServiceConfig : ConfigurationElement
     {

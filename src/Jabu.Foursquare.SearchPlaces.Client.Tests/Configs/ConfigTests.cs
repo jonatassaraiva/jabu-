@@ -1,7 +1,7 @@
-﻿using Jabu.Foursquare.SearchPlaces.Client.Config;
+﻿using Jabu.Foursquare.SearchPlaces.Client.Configs;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace Jabu.Foursquare.SearchPlaces.Client.Tests.Config
+namespace Jabu.Foursquare.SearchPlaces.Client.Tests.Configs
 {
     [TestClass]
     public class ConfigTests

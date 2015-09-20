@@ -1,12 +1,12 @@
 ﻿using System.Configuration;
 
-namespace Jabu.Foursquare.SearchPlaces.Client.Config
+namespace Jabu.Foursquare.SearchPlaces.Client.Configs
 {
     public class SectionConfig : ConfigurationSection
     {
         // <summary>
-        /// Application name
         /// </summary>
+        /// Application name
         [ConfigurationProperty("application", IsRequired = false)]
         public string Application
         {
